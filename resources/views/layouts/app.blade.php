@@ -12,6 +12,10 @@
         <meta content="" name="author" />
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="/css/pace-theme-minimal.css" rel="stylesheet" type="text/css" />
+        <script src="/js/pace.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">window.paceOptions = {"ajax":false,"document":true}</script>
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
         <link href="/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -36,7 +40,8 @@
         <link href="/assets/layouts/layout2/css/themes/blue.min.css" rel="stylesheet" type="text/css" id="style_color" />
         <link href="/assets/layouts/layout2/css/custom.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
-        <link rel="shortcut icon" href="favicon.ico" /> </head>
+        <link rel="shortcut icon" href="favicon.ico" /> 
+    </head>
     <!-- END HEAD -->
 
         <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
