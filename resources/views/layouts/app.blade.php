@@ -93,6 +93,7 @@
                                         notifikasi </span> pending </h3>
                                 <a href="{{ url('utilities/notification') }}">Lihat Semua </a>
                             </li>
+                            <!-- a -->
                             <li>
                                 <ul class="dropdown-menu-list scroller" style="height: 250px;"
                                     data-handle-color="#637283" id="datanotif"></ul>
