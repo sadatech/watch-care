@@ -40,6 +40,8 @@
         <link href="/assets/layouts/layout2/css/themes/blue.min.css" rel="stylesheet" type="text/css" id="style_color" />
         <link href="/assets/layouts/layout2/css/custom.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
+        <link href="/assets/global/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+
         <link rel="shortcut icon" href="favicon.ico" /> 
     </head>
     <!-- END HEAD -->
@@ -208,10 +210,12 @@
 <script src="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js"
         type="text/javascript"></script>
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="/assets/global/plugins/sweetalert/sweetalert.min.js" type="text/javascript"></script>
         <script src="/assets/global/scripts/app.min.js" type="text/javascript"></script>
         <!-- END THEME GLOBAL SCRIPTS -->
-        <!-- @yield('additional-script') -->
+        @yield('additional-script')
 
+        <script src="/assets/global/plugins/sweetalert/ui-sweetalert.min.js" type="text/javascript"></script>
         <!-- BEGIN PAGE LEVEL SCRIPTS -->
         <script src="/assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
 

@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="page-content">
         <!-- BEGIN PAGE HEAD-->
@@ -172,14 +171,6 @@
                                                                 <i class="fa fa-check"></i> Tracking Information </span>
                                                         </a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#tab3" data-toggle="tab" class="step active">
-                                                            <span class="number"> 3 </span>
-                                                            <span class="desc">
-                                                                <i class="fa fa-check"></i> Service you are Requesting </span>
-                                                        </a>
-                                                    </li>
-                                                    
                                                 </ul>
                                                 <div id="bar" class="progress progress-striped" role="progressbar">
                                                     <div class="progress-bar progress-bar-success"> </div>
@@ -190,13 +181,23 @@
                                                     <div class="alert alert-success display-none">
                                                         <button class="close" data-dismiss="alert"></button> Your form validation is successful! </div>
                                                     <div class="tab-pane active" id="tab1">
-                                                        <h3 class="block">Select Watch</h3>
+                                                        <h3 class="block">Select Your Watch For Request Tracking</h3>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Select Your Watch
+                                                                <span class="required"> * </span>
+                                                            </label>
+                                                            <div class="col-md-4">
+                                                                <select name="brand" class="" id="yourwatch" required>
+                                                                        
+                                                                    </select>
+                                                            </div>
+                                                        </div>
                                                         <div class="form-group">
                                                             <label class="control-label col-md-3">Your Fullname
                                                                 <span class="required"> * </span>
                                                             </label>
                                                             <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="username" value="{{@Auth::user()->fullname}}"/>
+                                                                <input type="text" disabled="disabled" style="background-color:#ddd;" class="form-control" name="username" value="{{@Auth::user()->fullname}}"/>
                                                                 <span class="help-block"> Provide your fullname </span>
                                                             </div>
                                                         </div>
@@ -205,7 +206,7 @@
                                                                 <span class="required"> * </span>
                                                             </label>
                                                             <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="email"  value="{{@Auth::user()->email}}"/>
+                                                                <input type="text" class="form-control" disabled="disabled" style="background-color:#ddd;" name="email"  value="{{@Auth::user()->email}}"/>
                                                                 <span class="help-block"> Provide your email address </span>
                                                             </div>
                                                         </div>
@@ -218,13 +219,13 @@
                                                                     <span class="input-group-addon" style="background-color:#DDD;">
                                                                         +62
                                                                     </span>
-                                                                    <input type="number" name="phone" class="form-control" value="{{@Auth::user()->phone}}"> 
+                                                                    <input type="number" name="phone" disabled="disabled" style="background-color:#ddd;" class="form-control" value="{{@Auth::user()->phone}}"> 
                                                                 </div>
                                                                 <span class="help-block"> Provide your number phone </span>
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-3">Your Address
+                                                            <label class="control-label col-md-3">Address For Tracking Watch
                                                                 <span class="required"> * </span>
                                                             </label>
                                                             <div class="col-md-4">
@@ -235,77 +236,72 @@
                                                                     <select name="city" class="" id="city" required>
                                                                     </select>
                                                                 <span class="help-block"> Your detail Address </span>
-                                                                <textarea class="form-control placeholder-no-fix" name="address" placeholder="Your Address" required style="height:100px;"></textarea>
+                                                                <textarea id="address" class="form-control placeholder-no-fix" name="address" placeholder="Your Address" required style="height:100px;"></textarea>
                                                                 <span class="help-block"> Post Code </span>
-                                                                <input type="text" class="form-control" name="postcode" placeholder="Post Code"/>
+                                                                <input id="postcode" type="text" class="form-control" name="postcode" placeholder="Post Code"/>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane" id="tab2">
-                                                        <h3 class="block">Watch Information</h3>
+                                                        <h3 class="block">Tracking Information</h3>
+                                                         <div class="form-group">
+                                                            <label class="control-label col-md-3">Your Fullname
+                                                                <span class="required"> : </span>
+                                                            </label>
+                                                            <div class="col-md-3">
+                                                                <label>{{@Auth::user()->fullname}}</label>
+                                                            </div>
+                                                        </div>
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-3">Watch Brand
-                                                                <span class="required"> * </span>
+                                                            <label class="control-label col-md-3">Email
+                                                                <span class="required"> : </span>
+                                                            </label>
+                                                            <div class="col-md-3">
+                                                                <label>{{@Auth::user()->email}}</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Phone Number
+                                                                <span class="required"> : </span>
                                                             </label>
                                                             <div class="col-md-4">
-                                                                    <select name="brand" class="" id="brand" required>
-                                                                        <option value="adidas">Adidas</option>
-                                                                        <option value="adidas">Nike</option>
-                                                                        <option value="rolex">Rolex</option>
-                                                                        <option value="swiss">Swiss</option>
+                                                                {{@Auth::user()->phone}}
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Jam Tangan Yang di Tracking
+                                                                <span class="required"> : </span>
+                                                            </label>
+                                                            <div class="col-md-4">
+                                                                <label id="watchtracking"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                             <label class="control-label col-md-3">Alamat Jam Yang di tracking
+                                                                <span class="required"> : </span>
+                                                            </label>
+                                                            <div class="col-md-4">
+                                                                <span class="help-block"> Province </span>
+                                                                    <label id="provincetracking"></label>
                                                                     </select>
+                                                                <span class="help-block"> City </span>
+                                                                    <label id="citytracking"></label>
+                                                                <span class="help-block"> Your detail Address </span>
+                                                                    <label id="addresstracking"></label>
+                                                                <span class="help-block"> Post Code </span>
+                                                                    <label id="postcodetracking"></label>
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
-                                                            <label class="control-label col-md-3">Case Number
-                                                                <span class="required"> * </span>
-                                                            </label>
-                                                            <div class="col-md-1">
-                                                                <input type="text" class="form-control" name="case_number" required/>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <input type="text" class="form-control" name="case_number" required/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-3">Serial Number
-                                                                <span class="required"> * </span>
+                                                             <label class="control-label col-md-3">Tanggal Barang Dapat Diambil
+                                                                <span class="required"> : </span>
                                                             </label>
                                                             <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="serial_number" required/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-3">Upload Picture
-                                                                <span class="required"> * </span>
-                                                            </label>
-                                                            <div class="col-md-1">
-                                                                <div>
-                                                                    <span id="buttonfiles" class="icon-btn" style="width:10%;background: #f0f0f0;
-                                                                    color:#000;cursor: crosshair;border:solid 0,5px #000;border:solid 1px #aaaaaa;"><i class="fa fa-file-image-o"></i>
-                                                                        <div style="padding-top:5%;">Choose File</div>
-                                                                    </span>
-                                                                </div>
-                                                            <input type="file" name="file" id="file" accept="image/*" style="opacity:0;" required/>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div>
-                                                                    <img id="img_file" width="100" height="100">
-                                                                </div>
+                                                                <input type="date" class="form-control">
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane" id="tab3">
-                                                        <h3 class="block">Service You Are Requesting</h3>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-3">Service You Are Requesting
-                                                                <span class="required"> * </span>
-                                                            </label>
-                                                            <div class="col-md-9">
-                                                                <textarea required class="ckeditor form-control" name="service_request" rows="6"></textarea>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    
                                             <div class="form-actions">
                                                 <div class="row">
                                                     <div class="col-md-offset-3 col-md-9">
@@ -313,10 +309,14 @@
                                                             <i class="fa fa-angle-left"></i> Back </a>
                                                         <a href="javascript:;" class="btn btn-outline green button-next"> Continue
                                                             <i class="fa fa-angle-right"></i>
-                                                        </a>
+                                                        </a><!-- 
                                                         <a href="javascript:;" class="btn green button-submit"> Submit
                                                             <i class="fa fa-check"></i>
-                                                        </a>
+                                                        </a> -->
+                                                        <button class="btn green mt-sweetalert button-submit" data-title="Apakah Anda Yakin Data Anda Sudah Benar ?"
+                                                            data-type="info" data-show-confirm-button="true" data-confirm-button-class="btn-success " data-show-cancel-button="true" data-cancel-button-class="btn-default" data-close-on-confirm="false" data-close-on-cancel="false" data-confirm-button-text='Submit'
+                                                            data-cancel-button-text='Cancel' data-popup-title-success="Thank you" data-popup-message-success="Data Success Inserted" data-popup-title-cancel="Cancelled" data-popup-message-cancel="You have disagreed to our Terms and Conditions">Submit<i class="fa fa-check"></i></button>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -948,10 +948,14 @@
                         cache: true
                 }
             });
-            $("#brand").select2({
+            $("#yourwatch").select2({
                 containerCssClass : "", 
                 width: '100%',
-                placeholder: "Brand"
+                placeholder: "Watch",
+                data: [{id:"Rolex (MR.Rizal)",text:"Rolex (MR.Rizal)"},
+                {id:"casio (MR.Rizal)",text:"casio (MR.Rizal)"},
+                {id:"hublot (MR.Rizal)",text:"hublot (MR.Rizal)"},
+                {id:"breguet (MR.Rizal)",text:"breguet (MR.Rizal)"}]
             });
             $("#buttonfiles").click(function() {
                     $("input[type='file']").trigger('click');
@@ -974,8 +978,21 @@
             $("#file").change(function(){
                 readURL(this);
             });
-            $('#form_wizard_1 .button-submit').click(function () {
-                alert('Thank You for Your trying Demo :)');
-            }).hide();
+            $("#yourwatch").change(function(event) {
+                $("#watchtracking").text($("#yourwatch").val());
+            });
+            $("#watchtracking").text($("#yourwatch").val());
+            $("#city").change(function(event) {
+                $("#citytracking").text($("#city").text());
+            });
+            $("#province").change(function(event) {
+                $("#provincetracking").text($("#province").text());
+            });
+            $("#address").keyup(function(event) {
+                $("#addresstracking").text($("#address").val());
+            });
+            $("#postcode").keyup(function(event) {
+                $("#postcodetracking").text($("#postcode").val());
+            });
         </script>
 @endsection

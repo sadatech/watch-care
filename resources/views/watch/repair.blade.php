@@ -317,9 +317,13 @@
                                                         <a href="javascript:;" class="btn btn-outline green button-next"> Continue
                                                             <i class="fa fa-angle-right"></i>
                                                         </a>
-                                                        <a href="javascript:;" class="btn green button-submit"> Submit
+                                                        <!-- <a href="javascript:;" class="btn green button-submit"> Submit
                                                             <i class="fa fa-check"></i>
-                                                        </a>
+                                                        </a> -->
+                                                        <button class="btn green mt-sweetalert button-submit" data-title="Apakah Anda Yakin Data Anda Sudah Benar ?"
+                                                            data-type="info" data-show-confirm-button="true" data-confirm-button-class="btn-success " data-show-cancel-button="true" data-cancel-button-class="btn-default" data-close-on-confirm="false" data-close-on-cancel="false" data-confirm-button-text='Submit'
+                                                            data-cancel-button-text='Cancel' data-popup-title-success="Thank you" data-popup-message-success="Data Success Inserted" data-popup-title-cancel="Cancelled" data-popup-message-cancel="You have disagreed to our Terms and Conditions">Submit<i class="fa fa-check"></i></button>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -977,8 +981,8 @@
             $("#file").change(function(){
                 readURL(this);
             });
-            $('#form_wizard_1 .button-submit').click(function () {
-                alert('Thank You for Your trying Demo :)');
-            }).hide();
+            // $('#form_wizard_1 .button-submit').click(function () {
+            //     alert('Thank You for Your trying Demo :)');
+            // }).hide();
         </script>
 @endsection
