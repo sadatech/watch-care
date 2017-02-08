@@ -1,23 +1,23 @@
 <div class="page-sidebar-wrapper">
                 <div class="page-sidebar navbar-collapse collapse">
                     <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
-                        <li class="nav-item start {{Request::is('/') || Request::is('home') ? 'active' : ''}}">
-                            <a href="{{ url('home') }}" class="nav-link nav-toggle">
+                        <li class="nav-item start {{Request::is('/') || Request::is('home') ? 'active' : ''}}" id="link">
+                            <a href="{{ url('home') }}" class="nav-link nav-toggle" title="Home">
                                 <i class="icon-home"></i>
                                 <span class="title">Dashboard</span>
                                 <span class="selected"></span>
                             </a>
                             
                         </li>
-                        <li class="nav-item {{Request::is('watchRepair') ? 'active' : ''}}">
-                            <a href="{{ url('watchRepair') }}" class="nav-link nav-toggle">
+                        <li class="nav-item {{Request::is('watchRepair') ? 'active' : ''}}" id="link">
+                            <a href="{{ url('watchRepair') }}" class="nav-link nav-toggle" title="Watch Repair">
                                 <i class="fa fa-plus-square"></i>
                                 <span class="title">Watch Repair</span>
                                 <span class="selected"></span>
                             </a>
                             
                         </li>
-                        <li class="nav-item {{Request::is('requestTracking') ? 'active open' : ''}}">
+                        <li class="nav-item {{Request::is('requestTracking') ? 'active open' : ''}}" id="link">
                             <a href="javascript:;" class="nav-link nav-toggle">
                                 <i class="fa fa-truck"></i>
                                 <span class="title">Tracking</span>
@@ -25,13 +25,13 @@
                                 <span class="arrow open"></span>
                             </a>
                             <ul class="sub-menu">
-                                <li class="nav-item  ">
-                                    <a href="{{url('requestTracking')}}" class="nav-link ">
+                                <li class="nav-item">
+                                    <a href="{{url('requestTracking')}}" class="nav-link" title="Tracking Request">
                                         <span class="title">Tracking Request</span>
                                     </a>
                                 </li>
-                                <li class="nav-item  ">
-                                    <a href="{{url('trackingStatus')}}" class="nav-link ">
+                                <li class="nav-item">
+                                    <a href="{{url('trackingStatus')}}" class="nav-link" title="Tracking Status">
                                         <span class="title">Tracking Status</span>
                                     </a>
                                 </li>

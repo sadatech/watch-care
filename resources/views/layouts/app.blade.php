@@ -44,7 +44,7 @@
     </head>
     <!-- END HEAD -->
 
-        <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
+        <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo" id="ajax-content">
 <!-- BEGIN HEADER -->
 <div class="page-header navbar navbar-fixed-top">
     <!-- BEGIN HEADER INNER -->
@@ -146,7 +146,7 @@
 <!-- END SIDEBAR -->
 
     <!-- BEGIN CONTENT -->
-    <div class="page-content-wrapper" id="vueApp">
+    <div class="page-content-wrapper">
         @yield('content')
     </div>
     <!-- END CONTENT -->
@@ -222,7 +222,8 @@
 <script src="/assets/global/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
 <script src="/assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
 
+@yield('additional-script')
 
-    @yield('additional-script')
+<script type="text/javascript" src="/js/menu.js"></script>
 </body>
 </html>
