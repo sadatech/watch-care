@@ -18,16 +18,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::group(['middleware' => ['auth']], function () {
+// Route::group(['middleware' => ['auth']], function () {
 	Route::get('/', 'HomeController@index');
 
 	Route::get('/home', 'HomeController@index');
 
 	Route::get('/watchRepair', 'WatchRepairController@index');
 	Route::get('/requestTracking', 'requestTrackingController@index');
-
-	Route::post('provinceFilter', 'Lib\CityController@filter');
-	Route::post('cityFilter', 'Lib\CityController@filterCity');
 
 
 	//Veritrans
@@ -46,4 +43,7 @@ Route::group(['middleware' => ['auth']], function () {
 	Route::get('/snaptoken', 'Veritrans\SnapController@token');
 	Route::post('/snapfinish', 'Veritrans\SnapController@finish');
 
-});
+// });
+
+	Route::post('provinceFilter', 'Lib\CityController@filter');
+	Route::post('cityFilter', 'Lib\CityController@filterCity');
