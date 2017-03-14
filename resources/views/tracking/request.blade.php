@@ -890,8 +890,8 @@
 
 
 @section('additional-script')
-        <script src="logistic_demo/public/assets/global/plugins/ckeditor/ckeditor.js" type="text/javascript"></script>
-        <script src="logistic_demo/public/assets/pages/scripts/form-wizard.js" type="text/javascript"></script>
+        <script src="/logistic_demo/public/assets/global/plugins/ckeditor/ckeditor.js" type="text/javascript"></script>
+        <script src="/logistic_demo/public/assets/pages/scripts/form-wizard.js" type="text/javascript"></script>
         <script type="text/javascript">
             $("#province").select2({ 
                 containerCssClass : "", 
