@@ -17,30 +17,30 @@
 
         <script type="text/javascript">window.paceOptions = {"ajax":false,"document":true}</script>
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
-        <link href="logistic_demo/public/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="logistic_demo/public/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="logistic_demo/public/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="logistic_demo/public/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
-        <link href="logistic_demo/public/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
-        <link href="logistic_demo/public/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"/>
-        <link href="logistic_demo/public/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="/logistic_demo/public/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"/>
+        <link href="/logistic_demo/public/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <!-- BEGIN PAGE LEVEL PLUGINS -->
-        <link href="logistic_demo/public/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
-        <link href="logistic_demo/public/assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
-        <link href="logistic_demo/public/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
-        <link href="logistic_demo/public/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL STYLES -->
-        <link href="logistic_demo/public/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
-        <link href="logistic_demo/public/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME GLOBAL STYLES -->
         <!-- BEGIN THEME LAYOUT STYLES -->
-        <link href="logistic_demo/public/assets/layouts/layout2/css/layout.min.css" rel="stylesheet" type="text/css" />
-        <link href="logistic_demo/public/assets/layouts/layout2/css/themes/blue.min.css" rel="stylesheet" type="text/css" id="style_color" />
-        <link href="logistic_demo/public/assets/layouts/layout2/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/layouts/layout2/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/layouts/layout2/css/themes/blue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="/logistic_demo/public/assets/layouts/layout2/css/custom.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME LAYOUT STYLES -->
-        <link href="logistic_demo/public/assets/global/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/public/assets/global/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
 
         <link rel="shortcut icon" href="favicon.ico" /> 
     </head>
@@ -110,7 +110,7 @@
                            data-close-others="true">
                             <span class="username username-hide-on-mobile"> {{ @Auth::user()->name }} </span>
                             <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
-                            <img alt="" class="img-circle" src="logistic_demo/public/assets/layouts/layout4/img/avatar9.jpg"/> </a>
+                            <img alt="" class="img-circle" src="/logistic_demo/public/assets/layouts/layout4/img/avatar9.jpg"/> </a>
                         <ul class="dropdown-menu dropdown-menu-default">
                             <li>
                                 <a href="page_user_profile_1.html">
@@ -165,66 +165,66 @@
 <!-- END FOOTER -->
 
 
-    <script src="logistic_demo/public/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <script src="/logistic_demo/public/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-<script src="logistic_demo/public/assets/global/plugins/moment.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
+<script src="/logistic_demo/public/assets/global/plugins/moment.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"
         type="text/javascript"></script>
 <script src="http://msurguy.github.io/ladda-bootstrap/dist/spin.min.js" type="text/javascript"></script>
 <script src="http://msurguy.github.io/ladda-bootstrap/dist/ladda.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL PLUGINS -->
-<script src="logistic_demo/public/assets/pages/scripts/form-validation.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/pages/scripts/form-validation.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-<script src="logistic_demo/public/assets/global/scripts/datatable.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js"
+<script src="/logistic_demo/public/assets/global/scripts/datatable.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js"
         type="text/javascript"></script>
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
-        <script src="logistic_demo/public/assets/global/plugins/sweetalert/sweetalert.min.js" type="text/javascript"></script>
-        <script src="logistic_demo/public/assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <script src="/logistic_demo/public/assets/global/plugins/sweetalert/sweetalert.min.js" type="text/javascript"></script>
+        <script src="/logistic_demo/public/assets/global/scripts/app.min.js" type="text/javascript"></script>
         <!-- END THEME GLOBAL SCRIPTS -->
         @yield('additional-script')
 
-        <script src="logistic_demo/public/assets/global/plugins/sweetalert/ui-sweetalert.min.js" type="text/javascript"></script>
+        <script src="/logistic_demo/public/assets/global/plugins/sweetalert/ui-sweetalert.min.js" type="text/javascript"></script>
         <!-- BEGIN PAGE LEVEL SCRIPTS -->
-        <script src="logistic_demo/public/assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+        <script src="/logistic_demo/public/assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
 
         <!-- END PAGE LEVEL SCRIPTS -->
-<script src="logistic_demo/public/assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/global/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
-<script src="logistic_demo/public/assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/global/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
+<script src="/logistic_demo/public/assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
 
 @yield('additional-script')
 
