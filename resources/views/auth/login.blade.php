@@ -54,10 +54,10 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN LOGO -->
         <div class="logo">
             <a href="index.html">
-                <img src="/uploads/smartwatch.png">
-                <h1 style="color: #5b9bd1; font-weight: bold" class="logo-default">Watch
+                <img src="/logistic_demo/pulic/uploads/truck.png">
+                <h1 style="color: #5b9bd1; font-weight: bold" class="logo-default">Logistic
                     <small>
-                        <small style="color: #fff">Care</small>
+                        <small style="color: #fff">Demo</small>
                     </small>
                 </h1> 
             </a>
@@ -209,7 +209,7 @@ License: You must have a valid license purchased only from themeforest(the above
             </form>
             <!-- END REGISTRATION FORM -->
         </div>
-        <div class="copyright"> 2017 © Watch Care </div>
+        <div class="copyright"> 2017 © Logistic </div>
 
         <script src="/logistic_demo/public/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
         <script src="/logistic_demo/public/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
