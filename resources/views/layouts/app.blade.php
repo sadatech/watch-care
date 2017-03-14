@@ -13,7 +13,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         <link href="/css/pace-theme-minimal.css" rel="stylesheet" type="text/css" />
-        <script src="/js/pace.min.js" type="text/javascript"></script>
+        <script src="/logistic_demo/public/js/pace.min.js" type="text/javascript"></script>
 
         <script type="text/javascript">window.paceOptions = {"ajax":false,"document":true}</script>
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
@@ -228,6 +228,6 @@
 
 @yield('additional-script')
 
-<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/logistic_demo/public/js/menu.js"></script>
 </body>
 </html>
