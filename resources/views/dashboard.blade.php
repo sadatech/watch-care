@@ -257,7 +257,7 @@
                                 </div>
                                 <div class="portlet-body">
                                     <div id="site_activities_loading">
-                                        <img src="../assets/global/img/loading.gif" alt="loading" /> </div>
+                                        <img src="/logistic_demo/public/assets/global/img/loading.gif" alt="loading" /> </div>
                                     <div id="site_activities_content" class="display-none">
                                         <div id="site_activities" style="height: 228px;"> </div>
                                     </div>

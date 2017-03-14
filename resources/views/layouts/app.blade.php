@@ -12,7 +12,7 @@
         <meta content="" name="author" />
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <link href="/css/pace-theme-minimal.css" rel="stylesheet" type="text/css" />
+        <link href="/logistic_demo/css/pace-theme-minimal.css" rel="stylesheet" type="text/css" />
         <script src="/logistic_demo/public/js/pace.min.js" type="text/javascript"></script>
 
         <script type="text/javascript">window.paceOptions = {"ajax":false,"document":true}</script>
