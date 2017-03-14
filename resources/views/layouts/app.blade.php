@@ -54,9 +54,9 @@
         <!-- BEGIN LOGO -->
         <div class="page-logo">
             <a href="index.html">
-                <h3 style="color: #5b9bd1; font-weight: bold" class="logo-default">Watch
+                <h3 style="color: #5b9bd1; font-weight: bold" class="logo-default">Logistic
                     <small>
-                        <small style="color: #fff">Care</small>
+                        <small style="color: #fff">Demo</small>
                     </small>
                 </h3>
             </a>

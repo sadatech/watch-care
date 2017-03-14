@@ -54,7 +54,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN LOGO -->
         <div class="logo">
             <a href="index.html">
-                <img src="/logistic_demo/pulic/uploads/truck.png">
+                <img src="/logistic_demo/public/uploads/truck.png">
                 <h1 style="color: #5b9bd1; font-weight: bold" class="logo-default">Logistic
                     <small>
                         <small style="color: #fff">Demo</small>
